@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _2012142670_PER
+namespace _2012142670_PER.Repositories
 {
-    public class Class1
+    class TipoPlanRepository
     {
     }
 }

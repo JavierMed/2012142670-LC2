@@ -62,11 +62,32 @@
     <Compile Include="Entities\Trabajador.cs" />
     <Compile Include="Entities\Ubigeo.cs" />
     <Compile Include="Entities\Venta.cs" />
+    <Compile Include="IRepositories\IAdministradorEquipo.cs" />
+    <Compile Include="IRepositories\IAdministradorLinea.cs" />
+    <Compile Include="IRepositories\ICentroAtencion.cs" />
+    <Compile Include="IRepositories\ICliente.cs" />
+    <Compile Include="IRepositories\IContrato.cs" />
+    <Compile Include="IRepositories\IDepartamento.cs" />
+    <Compile Include="IRepositories\IDireccion.cs" />
+    <Compile Include="IRepositories\IDistrito.cs" />
+    <Compile Include="IRepositories\IEquipoCelular.cs" />
+    <Compile Include="IRepositories\IEstadoEvaluacion.cs" />
+    <Compile Include="IRepositories\IEvaluacion.cs" />
+    <Compile Include="IRepositories\ILineaTelefonica.cs" />
+    <Compile Include="IRepositories\IProvincia.cs" />
+    <Compile Include="IRepositories\IRepository.cs" />
+    <Compile Include="IRepositories\ITipoEvaluacion.cs" />
+    <Compile Include="IRepositories\ITipoLinea.cs" />
+    <Compile Include="IRepositories\ITipoPago.cs" />
+    <Compile Include="IRepositories\ITipoPlan.cs" />
+    <Compile Include="IRepositories\ITipoTrabajador.cs" />
+    <Compile Include="IRepositories\ITrabajador.cs" />
+    <Compile Include="IRepositories\IUbigeo.cs" />
+    <Compile Include="IRepositories\IVenta.cs" />
+    <Compile Include="IRepositories\IPlan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="IRepositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

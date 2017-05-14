@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class TipoPago
     {
+        public int codTipoPago { get; set; }
+        public string nomTipoPago { get; set; }
+
+        public TipoPago()
+        {
+
+        }
     }
 }

@@ -8,5 +8,7 @@ namespace _2012142670_ENT.Entities
 {
     public class Departamento
     {
+        public int codDepartamento { get; set; }
+        public string departamento { get; set; }
     }
 }

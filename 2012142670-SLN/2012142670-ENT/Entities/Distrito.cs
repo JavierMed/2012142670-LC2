@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class Distrito
     {
+        public int codDistrito { get; set; }
+        public string nomDistrito { get; set; }
+
+        public Distrito()
+        {
+
+        }
     }
 }

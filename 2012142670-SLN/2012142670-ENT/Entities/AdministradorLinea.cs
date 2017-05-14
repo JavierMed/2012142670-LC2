@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class AdministradorLinea
     {
+        public int codAdminLinea { get; set; }
+        public int numeroLinea { get; set; }
+
+        public AdministradorLinea()
+        {
+
+        }
     }
 }

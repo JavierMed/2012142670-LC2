@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class TipoPlan
     {
+        public int codTipoPlan { get; set; }
+        public string nomTipoPlan { get; set; }
+
+        public TipoPlan()
+        {
+
+        }
     }
 }

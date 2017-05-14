@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class EstadoEvaluacion
     {
+        public int codEvaluacion { get; set; }
+        public string evalua { get; set; }
+
+        public EstadoEvaluacion()
+        {
+
+        }
     }
 }

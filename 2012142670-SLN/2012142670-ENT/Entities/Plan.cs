@@ -8,5 +8,13 @@ namespace _2012142670_ENT.Entities
 {
     public class Plan
     {
+        public int codPlan { get; set; }
+        public int plan { get; set; }
+        public int codTipoPlan { get; set; }
+
+        public Plan()
+        {
+
+        }
     }
 }

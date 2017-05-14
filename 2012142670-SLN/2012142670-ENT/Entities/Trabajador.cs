@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class Trabajador
     {
+        public int codTrabajador { get; set; }
+        public string nomTrabajador { get; set; }
+
+        public Trabajador()
+        {
+
+        }
     }
 }

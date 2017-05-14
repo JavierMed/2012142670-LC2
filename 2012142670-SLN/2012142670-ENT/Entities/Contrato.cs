@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class Contrato
     {
+        public int codContrato { get; set; }
+        public string contrato { get; set; }
+
+        public Contrato()
+        {
+
+        }
     }
 }

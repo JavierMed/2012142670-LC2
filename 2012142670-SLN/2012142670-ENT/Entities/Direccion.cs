@@ -8,5 +8,13 @@ namespace _2012142670_ENT.Entities
 {
     public class Direccion
     {
+        public int codDir { get; set; }
+        public string direccion { get; set; }
+        public int codUbigeo { get; set; }
+
+        public Direccion()
+        {
+
+        }
     }
 }

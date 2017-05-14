@@ -8,5 +8,12 @@ namespace _2012142670_ENT.Entities
 {
     public class Provincia
     {
+        public int codProvincia { get; set; }
+        public string nomProvincia { get; set; }
+
+        public Provincia()
+        {
+
+        }
     }
 }

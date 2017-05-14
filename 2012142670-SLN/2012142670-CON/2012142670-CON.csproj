@@ -49,16 +49,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\2012142670-ENT\2012142670-ENT.csproj">
-      <Project>{1d1a07f9-eb20-47ad-9805-d968fd1569f5}</Project>
-      <Name>2012142670-ENT</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\2012142670-PER\2012142670-PER.csproj">
-      <Project>{ea2117c3-6c4c-4728-81e0-76692bd90850}</Project>
-      <Name>2012142670-PER</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

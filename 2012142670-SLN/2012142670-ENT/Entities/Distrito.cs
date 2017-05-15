@@ -10,10 +10,13 @@ namespace _2012142670_ENT.Entities
     {
         public int codDistrito { get; set; }
         public string nomDistrito { get; set; }
+        public Provincia Provincia { get; set; }
+        public Ubigeo Ubigeo { get; set; }
 
         public Distrito()
         {
-
+            Provincia = new Provincia();
+            Ubigeo = new Ubigeo();
         }
     }
 }

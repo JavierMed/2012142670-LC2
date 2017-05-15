@@ -11,10 +11,11 @@ namespace _2012142670_ENT.Entities
         public int codAdminEqui { get; set; }
         public string nombreEquipo { get; set; }
         public int cantidad { get; set; }
+        public List<EquipoCelular> EquipoCelulares { get; set; }
 
         public AdministradorEquipo()
         {
-
+            EquipoCelulares = new List<EquipoCelular>();
         }
     }
 }

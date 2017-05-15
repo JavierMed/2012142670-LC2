@@ -10,5 +10,13 @@ namespace _2012142670_ENT.Entities
     {
         public int codDepartamento { get; set; }
         public string departamento { get; set; }
+        public List<Provincia> Provincias { get; set; }
+        public Ubigeo Ubigeo { get; set; }
+
+        public Departamento()
+        {
+            Provincias = new List<Provincia>();
+            Ubigeo = new Ubigeo();
+        }
     }
 }

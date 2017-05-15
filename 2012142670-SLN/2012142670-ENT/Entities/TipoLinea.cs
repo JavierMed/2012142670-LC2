@@ -10,10 +10,11 @@ namespace _2012142670_ENT.Entities
     {
         public int codTipoLinea { get; set; }
         public string nomTipoLinea { get; set; }
+        public LineaTelefonica LineaTelefonica { get; set; }
 
         public TipoLinea()
         {
-
+            LineaTelefonica = new LineaTelefonica();
         }
     }
 }

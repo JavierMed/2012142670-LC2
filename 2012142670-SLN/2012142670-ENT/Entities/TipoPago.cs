@@ -10,10 +10,11 @@ namespace _2012142670_ENT.Entities
     {
         public int codTipoPago { get; set; }
         public string nomTipoPago { get; set; }
+        public List<Venta> Ventas { get; set; }
 
         public TipoPago()
         {
-
+            Ventas = new List<Venta>();
         }
     }
 }

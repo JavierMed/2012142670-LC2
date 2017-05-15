@@ -10,10 +10,11 @@ namespace _2012142670_ENT.Entities
     {
         public int codAdminLinea { get; set; }
         public int numeroLinea { get; set; }
+        public List<LineaTelefonica> LineaTelefonos { get; set; }
 
         public AdministradorLinea()
         {
-
+            LineaTelefonos = new List<LineaTelefonica>();
         }
     }
 }

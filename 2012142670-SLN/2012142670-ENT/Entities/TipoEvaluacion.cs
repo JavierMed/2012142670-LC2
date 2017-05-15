@@ -10,10 +10,11 @@ namespace _2012142670_ENT.Entities
     {
         public int codTipoEva { get; set; }
         public string tipoEvaluacion { get; set; }
+        public List<Evaluacion> Evaluaciones { get; set; }
 
         public TipoEvaluacion()
         {
-
+            Evaluaciones = new List<Evaluacion>();
         }
     }
 }

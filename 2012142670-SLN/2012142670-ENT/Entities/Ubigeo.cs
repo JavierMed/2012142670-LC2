@@ -16,12 +16,14 @@ namespace _2012142670_ENT.Entities
         public ICollection<Departamento> Departamento { get; set; }
         public ICollection<Distrito> Distrito { get; set; }
         public ICollection<Provincia> Provincia { get; set; }
+        public Direccion Direccion { get; set; }
 
         public Ubigeo()
         {
             Departamento = new HashSet<Departamento>();
             Distrito = new HashSet<Distrito>();
             Provincia = new HashSet<Provincia>();
+            Direccion = new Direccion();
         }
     }
 }

@@ -10,10 +10,11 @@ namespace _2012142670_ENT.Entities
     {
         public int codTipoTra { get; set; }
         public string nomTipoTra { get; set; }
+        public List<Trabajador> Trabajadores { get; set; }
 
         public TipoTrabajador()
         {
-
+            Trabajadores = new List<Trabajador>();
         }
     }
 }

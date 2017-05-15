@@ -11,10 +11,15 @@ namespace _2012142670_ENT.Entities
         public int codCenAten { get; set; }
         public string nomCentroAtencion { get; set; }
         public int codDir { get; set; }
+        public Direccion Direccion { get; set; }
+        public List<Venta> Ventas { get; set; }
+        public List<Evaluacion> Evaluaciones { get; set; }
 
         public CentroAtencion()
         {
-
+            Direccion = new Direccion();
+            Ventas = new List<Venta>();
+            Evaluaciones = new List<Evaluacion>();
         }
     }
 }

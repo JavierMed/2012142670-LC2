@@ -10,10 +10,11 @@ namespace _2012142670_ENT.Entities
     {
         public int codTipoPlan { get; set; }
         public string nomTipoPlan { get; set; }
+        public List<Plan> Planes { get; set; }
 
         public TipoPlan()
         {
-
+            Planes = new List<Plan>();
         }
     }
 }

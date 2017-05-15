@@ -10,5 +10,13 @@ namespace _2012142670_PER.EntityTypeConfiguration
 {
     public class DepartamentoConfiguration : EntityTypeConfiguration<Departamento>
     {
+        public DepartamentoConfiguration()
+        {
+            ToTable("Departamento");
+
+            HasKey(c => c.codDepartamento);
+
+            Property(c => c.departamento).HasMaxLength(255);
+        }
     }
 }

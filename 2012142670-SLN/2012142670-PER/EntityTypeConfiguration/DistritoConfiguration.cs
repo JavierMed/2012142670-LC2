@@ -10,5 +10,13 @@ namespace _2012142670_PER.EntityTypeConfiguration
 {
     public class DistritoConfiguration : EntityTypeConfiguration<Distrito>
     {
+        public DistritoConfiguration()
+        {
+            ToTable("Distrito");
+
+            HasKey(c => c.codDistrito);
+
+            Property(c => c.nomDistrito).HasMaxLength(255);
+        }
     }
 }

@@ -8,7 +8,17 @@ using System.Threading.Tasks;
 
 namespace _2012142670_PER.EntityTypeConfiguration
 {
-    class ClienteConfiguration : EntityTypeConfiguration<Cliente>
+    public class ClienteConfiguration : EntityTypeConfiguration<Cliente>
     {
+        public ClienteConfiguration()
+        {
+            ToTable("Cliente");
+
+            HasKey(c => c.codCliente);
+
+            Property(c => c.nombre).HasMaxLength(255);
+            Property(c => c.dni).HasMaxLength(20);
+
+        }
     }
 }

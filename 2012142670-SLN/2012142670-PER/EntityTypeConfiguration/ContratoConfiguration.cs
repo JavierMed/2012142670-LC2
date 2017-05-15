@@ -10,5 +10,12 @@ namespace _2012142670_PER.EntityTypeConfiguration
 {
     public class ContratoConfiguration : EntityTypeConfiguration<Contrato>
     {
+        public ContratoConfiguration()
+        {
+            ToTable("Contrato");
+
+            HasKey(c => c.codContrato);
+            Property(c => c.contrato).HasMaxLength(100);
+        }
     }
 }

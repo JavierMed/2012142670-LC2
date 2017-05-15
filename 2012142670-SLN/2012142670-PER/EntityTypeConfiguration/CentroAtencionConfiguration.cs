@@ -10,5 +10,13 @@ namespace _2012142670_PER.EntityTypeConfiguration
 {
     public class CentroAtencionConfiguration : EntityTypeConfiguration<CentroAtencion>
     {
+        public CentroAtencionConfiguration()
+        {
+            ToTable("CentroAtencion");
+            HasKey(c => c.codCenAten);
+            Property(c => c.codDir).HasColumnType("int");
+            Property(c => c.nomCentroAtencion).HasMaxLength(100);
+
+        }
     }
 }

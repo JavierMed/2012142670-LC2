@@ -14,7 +14,7 @@ namespace _2012142670_PER.EntityTypeConfiguration
         {
             ToTable("Cliente");
 
-            HasKey(c => c.codCliente);
+            HasKey(c => c.ClienteId);
 
             Property(c => c.nombre).HasMaxLength(255);
             Property(c => c.dni).HasMaxLength(20);

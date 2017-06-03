@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,18 +9,20 @@ namespace _2012142670_ENT.Entities
 {
     public class CentroAtencion
     {
-        public int codCenAten { get; set; }
+        public int CentroAtencionId { get; set; }
         public string nomCentroAtencion { get; set; }
-        public int codDir { get; set; }
-        public Direccion Direccion { get; set; }
-        public List<Venta> Ventas { get; set; }
-        public List<Evaluacion> Evaluaciones { get; set; }
+        public string direccion { get; set; }
+
+        public int UbigeoId { get; set; }
+        public Ubigeo Ubigeo { get; set; }
+
+        public ICollection<Venta> Ventas { get; set; }
+        public ICollection<Evaluacion> Evaluaciones { get; set; }
 
         public CentroAtencion()
         {
-            Direccion = new Direccion();
-            Ventas = new List<Venta>();
-            Evaluaciones = new List<Evaluacion>();
+            Ventas = new Collection<Venta>();
+            Evaluaciones = new Collection<Evaluacion>();
         }
     }
 }

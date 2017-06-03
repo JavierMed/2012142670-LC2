@@ -12,9 +12,7 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public CentroAtencionConfiguration()
         {
-            ToTable("CentroAtencion");
-            HasKey(c => c.codCenAten);
-            Property(c => c.codDir).HasColumnType("int");
+            HasKey(c => c.CentroAtencionId);
             Property(c => c.nomCentroAtencion).HasMaxLength(100);
 
         }

@@ -6,15 +6,9 @@ using System.Threading.Tasks;
 
 namespace _2012142670_ENT.Entities
 {
-    public class TipoPago
+    public enum TipoPago:byte
     {
-        public int codTipoPago { get; set; }
-        public string nomTipoPago { get; set; }
-        public List<Venta> Ventas { get; set; }
-
-        public TipoPago()
-        {
-            Ventas = new List<Venta>();
-        }
+        Credito=1,
+        Efectivo=2,
     }
 }

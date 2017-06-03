@@ -6,15 +6,9 @@ using System.Threading.Tasks;
 
 namespace _2012142670_ENT.Entities
 {
-    public class TipoTrabajador
+    public enum TipoTrabajador:byte
     {
-        public int codTipoTra { get; set; }
-        public string nomTipoTra { get; set; }
-        public List<Trabajador> Trabajadores { get; set; }
-
-        public TipoTrabajador()
-        {
-            Trabajadores = new List<Trabajador>();
-        }
+      Vendedor=1,
+      Cajero=2,
     }
 }

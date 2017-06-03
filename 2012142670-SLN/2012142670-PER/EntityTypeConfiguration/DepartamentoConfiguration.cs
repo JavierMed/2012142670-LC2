@@ -12,9 +12,7 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public DepartamentoConfiguration()
         {
-            ToTable("Departamento");
-
-            HasKey(c => c.codDepartamento);
+            HasKey(c => c.DepartamentoId);
 
             Property(c => c.departamento).HasMaxLength(255);
         }

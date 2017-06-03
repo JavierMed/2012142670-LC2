@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,13 +9,13 @@ namespace _2012142670_ENT.Entities
 {
     public class AdministradorLinea
     {
-        public int codAdminLinea { get; set; }
-        public int numeroLinea { get; set; }
-        public List<LineaTelefonica> LineaTelefonos { get; set; }
+        public int AdministradorLineaId { get; set; }
+
+        public ICollection<LineaTelefonica> LineasTelefonicas { get; set; }
 
         public AdministradorLinea()
         {
-            LineaTelefonos = new List<LineaTelefonica>();
+            LineasTelefonicas = new Collection<LineaTelefonica>();
         }
     }
 }

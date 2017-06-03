@@ -10,5 +10,11 @@ namespace _2012142670_PER.EntityTypeConfiguration
 {
     public class UbigeoConfiguration : EntityTypeConfiguration<Ubigeo>
     {
+        public UbigeoConfiguration()
+        {
+//            HasKey(a => a.UbigeoId);
+
+
+        }
     }
 }

@@ -8,19 +8,19 @@ namespace _2012142670_ENT.Entities
 {
     public class LineaTelefonica
     {
-        public int codLineaTelefo { get; set; }
-        public string nomLinea { get; set; }
-        public int codAdminLinea { get; set; }
-        public int codTipoLinea { get; set; }
-        public AdministradorLinea AdminLinea { get; set; }
-        public List<TipoLinea> TipoLineas { get; set; }
+        public int LineaTelefonicaId { get; set; }
+        public string Numero { get; set; }
+        
+        public TipoLinea TipoLinea { get; set; }
         public Venta Venta { get; set; }
         public Evaluacion Evaluacion { get; set; }
 
+        public int AdministradorLineaId { get; set; }
+        public AdministradorLinea AdministradorLinea { get; set; }
+
         public LineaTelefonica()
         {
-            AdminLinea = new AdministradorLinea();
-            TipoLineas = new List<TipoLinea>();
+            AdministradorLinea = new AdministradorLinea();
             Venta = new Venta();
             Evaluacion = new Evaluacion();
         }

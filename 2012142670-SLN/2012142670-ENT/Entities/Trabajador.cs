@@ -8,14 +8,16 @@ namespace _2012142670_ENT.Entities
 {
     public class Trabajador
     {
-        public int codTrabajador { get; set; }
+        public int TrabajadorId { get; set; }
         public string nomTrabajador { get; set; }
-        public TipoTrabajador TipoTraba { get; set; }
+
+        public TipoTrabajador TipoTrabajador { get; set; }
+
         public List<Evaluacion> Evaluaciones { get; set; }
 
         public Trabajador()
         {
-            TipoTraba = new TipoTrabajador();
+            TipoTrabajador = new TipoTrabajador();
             Evaluaciones = new List<Evaluacion>();
         }
     }

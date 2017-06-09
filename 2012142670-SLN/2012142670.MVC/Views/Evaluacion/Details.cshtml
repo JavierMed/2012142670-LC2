@@ -1,0 +1,90 @@
+﻿@model _2012142670_ENT.Entities.Evaluacion
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Evaluacion</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CentroAtencion.NombreCentroAtencion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CentroAtencion.NombreCentroAtencion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Cliente.Nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Cliente.Nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EquipoCelular.Modelo)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EquipoCelular.Modelo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.LineaTelefonica.LineaTelefonicaId)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.LineaTelefonica.LineaTelefonicaId)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Plan.NombrePlan)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Plan.NombrePlan)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Trabajador.NombreTrabajador)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Trabajador.NombreTrabajador)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.EstadoEvaluacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.EstadoEvaluacion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TipoEvaluacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TipoEvaluacion)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.EvaluacionId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

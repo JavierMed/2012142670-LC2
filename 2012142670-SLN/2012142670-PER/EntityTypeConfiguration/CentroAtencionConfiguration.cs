@@ -12,9 +12,9 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public CentroAtencionConfiguration()
         {
-            HasKey(c => c.CentroAtencionId);
-            Property(c => c.nomCentroAtencion).HasMaxLength(100);
-
+            HasRequired(c => c.Ubigeo)
+                   .WithMany(c => c.CentroAtencion)
+                   .HasForeignKey(c => c.UbigeoId);
         }
     }
 }

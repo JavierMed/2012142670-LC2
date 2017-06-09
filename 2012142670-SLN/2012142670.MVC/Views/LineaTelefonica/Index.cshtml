@@ -1,0 +1,47 @@
+﻿@model IEnumerable<_2012142670_ENT.Entities.LineaTelefonica>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroLinea)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoLinea)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroLinea)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoLinea)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.LineaTelefonicaId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.LineaTelefonicaId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.LineaTelefonicaId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

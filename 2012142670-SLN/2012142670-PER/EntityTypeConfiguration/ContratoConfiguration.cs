@@ -12,7 +12,10 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public ContratoConfiguration()
         {
-            HasKey(c => c.ContratoId);
+            HasRequired(v => v.Venta)
+                 .WithMany(c => c.Contratos)
+                 .HasForeignKey(c => c.VentaId);
+
         }
     }
 }

@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class LineaTelefonicaRepository : Repository<LineaTelefonica>, ILineaTelefonica
     {
+        public LineaTelefonicaRepository(_2012142670DBContext context) : base(context)
+        {
+
+        }
     }
 }

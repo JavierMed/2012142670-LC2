@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class UbigeoRepository : Repository<Ubigeo>, IUbigeo
     {
+        public UbigeoRepository(_2012142670DBContext context) : base(context)
+        {
+
+        }
     }
 }

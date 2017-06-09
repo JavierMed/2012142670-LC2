@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,20 +10,18 @@ namespace _2012142670_ENT.Entities
     public class LineaTelefonica
     {
         public int LineaTelefonicaId { get; set; }
-        public string Numero { get; set; }
+        public int NumeroLinea { get; set; }
         
-        public TipoLinea TipoLinea { get; set; }
-        public Venta Venta { get; set; }
-        public Evaluacion Evaluacion { get; set; }
-
-        public int AdministradorLineaId { get; set; }
-        public AdministradorLinea AdministradorLinea { get; set; }
+        public TipoLinea TipoLinea { get; set; }        
+        public ICollection<Venta> Ventas { get; set; }
+        public ICollection<Evaluacion> Evaluaciones { get; set; }        
+        public ICollection<AdministradorLinea> AdministradorLineas { get; set; }
 
         public LineaTelefonica()
         {
-            AdministradorLinea = new AdministradorLinea();
-            Venta = new Venta();
-            Evaluacion = new Evaluacion();
+            AdministradorLineas = new Collection<AdministradorLinea>();
+            Ventas = new Collection<Venta>();
+            Evaluaciones = new Collection<Evaluacion>();
         }
     }
 }

@@ -12,9 +12,10 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public DepartamentoConfiguration()
         {
-            HasKey(c => c.DepartamentoId);
+            HasMany(p => p.Provincias)
+                .WithRequired(d => d.Departamento)
+                .HasForeignKey(d => d.DepartamentoId);
 
-            Property(c => c.departamento).HasMaxLength(255);
         }
     }
 }

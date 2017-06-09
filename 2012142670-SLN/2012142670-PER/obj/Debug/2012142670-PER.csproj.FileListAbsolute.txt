@@ -1,3 +1,17 @@
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-PER.dll.config
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-PER.dll
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-PER.pdb
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-ENT.dll
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\EntityFramework.dll
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-ENT.pdb
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\EntityFramework.xml
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.dll
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.pdb
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\obj\Debug\_2012142670_PER.Migrations.initialmode.resources
+C:\Users\Lenovo-B470\Desktop\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.csproj.GenerateResource.Cache
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-PER.dll.config
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-PER.dll
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\bin\Debug\2012142670-PER.pdb
@@ -10,3 +24,5 @@ C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.csprojResolveAssemblyReference.cache
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.dll
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.pdb
+C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\obj\Debug\_2012142670_PER.Migrations.initialmode.resources
+C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-PER\obj\Debug\2012142670-PER.csproj.GenerateResource.Cache

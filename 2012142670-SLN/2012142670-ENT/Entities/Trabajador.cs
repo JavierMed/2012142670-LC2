@@ -9,7 +9,7 @@ namespace _2012142670_ENT.Entities
     public class Trabajador
     {
         public int TrabajadorId { get; set; }
-        public string nomTrabajador { get; set; }
+        public string NombreTrabajador { get; set; }
 
         public TipoTrabajador TipoTrabajador { get; set; }
 

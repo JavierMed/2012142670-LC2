@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class ContratoRepository : Repository<Contrato>, IContrato
     {
+        public ContratoRepository(_2012142670DBContext context) : base(context)
+        {
+
+        }
     }
 }

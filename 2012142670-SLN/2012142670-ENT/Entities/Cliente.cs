@@ -10,17 +10,16 @@ namespace _2012142670_ENT.Entities
     public class Cliente
     {
         public int ClienteId { get; set; }
-        public string nombre { get; set; }
-        public string dni { get; set; }
+        public string Nombre { get; set; }
+        public string DNI { get; set; }
 
-        public int VentaId { get; set; }
-        public Venta Venta { get; set; }
-
-        public int EvaluacionId { get; set; }
-        public Evaluacion Evaluacions { get; set; }
+        public ICollection<Venta> Ventas { get; set; }
+        public ICollection<Evaluacion> Evaluaciones{ get; set; }
 
         public Cliente()
         {
+            Evaluaciones = new Collection<Evaluacion>();
+            Ventas = new Collection<Venta>();
         }
     }
 }

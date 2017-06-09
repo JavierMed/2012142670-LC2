@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class VentaRepository : Repository<Venta>, IVenta
     {
+        public VentaRepository(_2012142670DBContext context) : base(context)
+        {
+
+        }
     }
 }

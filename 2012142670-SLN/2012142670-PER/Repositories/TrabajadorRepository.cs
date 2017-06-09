@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class TrabajadorRepository : Repository<Trabajador>, ITrabajador
     {
+        public TrabajadorRepository(_2012142670DBContext context) : base(context)
+        {
+
+        }
     }
 }

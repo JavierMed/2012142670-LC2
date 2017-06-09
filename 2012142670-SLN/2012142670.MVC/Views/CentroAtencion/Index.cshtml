@@ -1,0 +1,59 @@
+﻿@model IEnumerable<_2012142670_ENT.Entities.CentroAtencion>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ubigeo.UbigeoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreCentroAtencion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ubigeo.UbigeoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreCentroAtencion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.CentroAtencionId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.CentroAtencionId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.CentroAtencionId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

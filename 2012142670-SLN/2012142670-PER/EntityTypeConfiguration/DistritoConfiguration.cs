@@ -12,9 +12,7 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public DistritoConfiguration()
         {
-            HasKey(c => c.DistritoId);
-
-            Property(c => c.nomDistrito).HasMaxLength(255);
+           
         }
     }
 }

@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class DistritoRepository : Repository<Distrito>, IDistrito
     {
+        public DistritoRepository(_2012142670DBContext context) : base(context)
+        {
+
+        }
     }
 }

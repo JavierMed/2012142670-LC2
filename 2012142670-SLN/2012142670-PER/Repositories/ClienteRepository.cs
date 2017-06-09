@@ -10,5 +10,9 @@ namespace _2012142670_PER.Repositories
 {
     public class ClienteRepository : Repository<Cliente>, ICliente
     {
+        public ClienteRepository(_2012142670DBContext context):base(context)
+        {
+
+        }
     }
 }

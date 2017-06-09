@@ -12,9 +12,9 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public LineaTelefonicaConfiguration()
         {
-            HasKey(a => a.LineaTelefonicaId);
+           // HasKey(a => a.LineaTelefonicaId);
 
-            Property(a => a.Numero).HasMaxLength(9);
+            //Property(a => a.Numero).HasMaxLength(9);
 
 
         }

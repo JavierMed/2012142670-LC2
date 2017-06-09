@@ -12,11 +12,11 @@ namespace _2012142670_ENT.Entities
         public int ContratoId { get; set; }
         public DateTime FechaContrato { get; set; }
 
-        public ICollection<Venta> Venta { get; set; }
+        public int VentaId { get; set; }
+        public Venta Venta { get; set; }
 
         public Contrato()
         {
-            Venta = new Collection<Venta>();
         }
     }
 }

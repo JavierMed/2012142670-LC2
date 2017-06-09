@@ -12,25 +12,32 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public EvaluacionConfiguration()
         {
-            HasKey(a => a.EvaluacionId);
-            /*
-            HasRequired(v => v.Venta)
-                .WithMany(g => g.Evaluacion)
-                .HasForeignKey(v => v.codVenta);
+            HasRequired(d => d.Plan)
+                 .WithMany(p => p.Evaluaciones)
+                 .HasForeignKey(p => p.PlanId);
+
+            HasRequired(t => t.Trabajador)
+                .WithMany(e => e.Evaluaciones)
+                .HasForeignKey(e => e.TrabajadorId);
+
+            HasRequired(d => d.Cliente)
+                .WithMany(p => p.Evaluaciones)
+                .HasForeignKey(p => p.ClienteId);
 
             
-            //uno a muchos
-            HasRequired(v => v.CentroAtencion)
-                .WithMany(g => g.Evaluaciones)
-                .HasForeignKey(v => v.codCentroAten);
+            HasRequired(c => c.CentroAtencion)
+                .WithMany(e => e.Evaluaciones)
+                .HasForeignKey(e => e.CentroAtencionId);
 
-           
-            //muchos a uno
-            HasMany(v => v.LineaTelefonicas)
-                .WithRequired(g => g.Evaluacion)
-                .HasForeignKey(c=>c.LineaTelefonicaId);
-                */
-            
+            HasRequired(d => d.LineaTelefonica)
+                 .WithMany(p => p.Evaluaciones)
+                 .HasForeignKey(p => p.LineaTelefonicaId);
+
+            HasRequired(d => d.EquipoCelular)
+                 .WithMany(p => p.Evaluaciones)
+                 .HasForeignKey(p => p.EquipoCelularId);
+
+
 
         }
     }

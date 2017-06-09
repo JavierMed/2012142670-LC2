@@ -74,6 +74,7 @@
     <Compile Include="IRepositories\IRepository.cs" />
     <Compile Include="IRepositories\ITrabajador.cs" />
     <Compile Include="IRepositories\IUbigeo.cs" />
+    <Compile Include="IRepositories\IUnityOfWork.cs" />
     <Compile Include="IRepositories\IVenta.cs" />
     <Compile Include="IRepositories\IPlan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

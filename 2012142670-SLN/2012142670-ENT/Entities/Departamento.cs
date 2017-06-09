@@ -11,13 +11,16 @@ namespace _2012142670_ENT.Entities
     {
         public int DepartamentoId { get; set; }
         public string departamento { get; set; }
+
         public ICollection<Provincia> Provincias { get; set; }
-        public ICollection<Ubigeo> Ubigeo { get; set; }
+
+        
+        public ICollection<Ubigeo> Ubigeos { get; set; }
 
         public Departamento()
         {
             Provincias = new Collection<Provincia>();
-            Ubigeo = new Collection<Ubigeo>();
+            Ubigeos = new Collection<Ubigeo>();
         }
     }
 }

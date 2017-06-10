@@ -7,29 +7,29 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using _2012142670_ENT.Entities;
-using _2012142670_PER;
 using _2012142670_ENT.IRepositories;
+using _2012142670_PER;
 
 namespace _2012142670.MVC.Controllers
 {
-    public class DistritoesController : Controller
+    public class DistritoController : Controller
     {
         //private _2012142670DBContext db = new _2012142670DBContext();
 
         private readonly IUnityOfWork _UnityOfWork;
-        public DistritoesController(IUnityOfWork unityOfWork)
+        public DistritoController(IUnityOfWork unityOfWork)
         {
             _UnityOfWork = unityOfWork;
         }
 
-        // GET: Distritoes
+        // GET: Distrito
         public ActionResult Index()
         {
-            //var distrito = _UnityOfWork.Distrito.Include(d => d.Provincia);
+            //var distrito = db.Distrito.Include(d => d.Provincia);
             return View(_UnityOfWork.Distrito.GetAll());
         }
 
-        // GET: Distritoes/Details/5
+        // GET: Distrito/Details/5
         public ActionResult Details(int id)
         {
             if (id == null)
@@ -44,14 +44,14 @@ namespace _2012142670.MVC.Controllers
             return View(distrito);
         }
 
-        // GET: Distritoes/Create
+        // GET: Distrito/Create
         public ActionResult Create()
         {
             //ViewBag.ProvinciaId = new SelectList(db.Provincia, "ProvinciaId", "nomProvincia");
             return View();
         }
 
-        // POST: Distritoes/Create
+        // POST: Distrito/Create
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -69,7 +69,7 @@ namespace _2012142670.MVC.Controllers
             return View(distrito);
         }
 
-        // GET: Distritoes/Edit/5
+        // GET: Distrito/Edit/5
         public ActionResult Edit(int id)
         {
             if (id == null)
@@ -85,7 +85,7 @@ namespace _2012142670.MVC.Controllers
             return View(distrito);
         }
 
-        // POST: Distritoes/Edit/5
+        // POST: Distrito/Edit/5
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -102,7 +102,7 @@ namespace _2012142670.MVC.Controllers
             return View(distrito);
         }
 
-        // GET: Distritoes/Delete/5
+        // GET: Distrito/Delete/5
         public ActionResult Delete(int id)
         {
             if (id == null)
@@ -117,7 +117,7 @@ namespace _2012142670.MVC.Controllers
             return View(distrito);
         }
 
-        // POST: Distritoes/Delete/5
+        // POST: Distrito/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)

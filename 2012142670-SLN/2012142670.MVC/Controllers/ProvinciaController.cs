@@ -7,8 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using _2012142670_ENT.Entities;
-using _2012142670_PER;
 using _2012142670_ENT.IRepositories;
+using _2012142670_PER;
 
 namespace _2012142670.MVC.Controllers
 {

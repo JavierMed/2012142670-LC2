@@ -10,12 +10,11 @@ namespace _2012142670_ENT.Entities
     public class Evaluacion
     {
         public int EvaluacionId { get; set; }  
+
         public int TrabajadorId { get; set; }
         public Trabajador Trabajador { get; set; }
-
         public EstadoEvaluacion EstadoEvaluacion { get; set; }
         public TipoEvaluacion TipoEvaluacion { get; set; }
-
         public int ClienteId { get; set; }
         public Cliente Cliente { get; set; }
         public ICollection<Venta> Ventas { get; set; }

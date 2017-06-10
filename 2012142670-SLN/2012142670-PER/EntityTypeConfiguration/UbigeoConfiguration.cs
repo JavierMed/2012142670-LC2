@@ -12,9 +12,9 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public UbigeoConfiguration()
         {
-            HasRequired(d => d.Departamento)
+            HasRequired(d => d.Distrito)
                  .WithMany(u => u.Ubigeos)
-                 .HasForeignKey(d => d.DepartamentoId);
+                 .HasForeignKey(d => d.DistritoId);
 
         }
     }

@@ -1,4 +1,4 @@
-﻿@model _2012142670_ENT.Entities.Provincia
+﻿@model _2012142670_ENT.Entities.Distrito
 
 @{
     Layout = null;
@@ -13,29 +13,29 @@
 </head>
 <body>
     <div>
-        <h4>Provincia</h4>
+        <h4>Distrito</h4>
         <hr />
         <dl class="dl-horizontal">
             <dt>
-                @Html.DisplayNameFor(model => model.Departamento.departamento)
+                @Html.DisplayNameFor(model => model.Provincia.nomProvincia)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.Departamento.departamento)
+                @Html.DisplayFor(model => model.Provincia.nomProvincia)
             </dd>
     
             <dt>
-                @Html.DisplayNameFor(model => model.nomProvincia)
+                @Html.DisplayNameFor(model => model.nomDistrito)
             </dt>
     
             <dd>
-                @Html.DisplayFor(model => model.nomProvincia)
+                @Html.DisplayFor(model => model.nomDistrito)
             </dd>
     
         </dl>
     </div>
     <p>
-        @Html.ActionLink("Edit", "Edit", new { id = Model.ProvinciaId }) |
+        @Html.ActionLink("Edit", "Edit", new { id = Model.DistritoId }) |
         @Html.ActionLink("Back to List", "Index")
     </p>
 </body>

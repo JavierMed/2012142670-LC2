@@ -66,48 +66,24 @@ namespace _2012142670_PER.Migrations
                         Direccion = c.String(),
                         Telefono = c.Int(nullable: false),
                         UbigeoId = c.Int(nullable: false),
-                        CentroAtencion_CentroAtencionId = c.Int(),
                     })
                 .PrimaryKey(t => t.CentroAtencionId)
-                .ForeignKey("dbo.CentroAtencions", t => t.CentroAtencion_CentroAtencionId)
                 .ForeignKey("dbo.Ubigeos", t => t.UbigeoId, cascadeDelete: true)
-                .Index(t => t.UbigeoId)
-                .Index(t => t.CentroAtencion_CentroAtencionId);
+                .Index(t => t.UbigeoId);
             
             CreateTable(
                 "dbo.Ubigeos",
                 c => new
                     {
                         UbigeoId = c.Int(nullable: false, identity: true),
-                        DepartamentoId = c.Int(nullable: false),
+                        DistritoId = c.Int(nullable: false),
                         Direccion_DireccionId = c.Int(),
                     })
                 .PrimaryKey(t => t.UbigeoId)
-                .ForeignKey("dbo.Departamentoes", t => t.DepartamentoId, cascadeDelete: true)
+                .ForeignKey("dbo.Distritoes", t => t.DistritoId, cascadeDelete: true)
                 .ForeignKey("dbo.Direccions", t => t.Direccion_DireccionId)
-                .Index(t => t.DepartamentoId)
+                .Index(t => t.DistritoId)
                 .Index(t => t.Direccion_DireccionId);
-            
-            CreateTable(
-                "dbo.Departamentoes",
-                c => new
-                    {
-                        DepartamentoId = c.Int(nullable: false, identity: true),
-                        departamento = c.String(),
-                    })
-                .PrimaryKey(t => t.DepartamentoId);
-            
-            CreateTable(
-                "dbo.Provincias",
-                c => new
-                    {
-                        ProvinciaId = c.Int(nullable: false, identity: true),
-                        nomProvincia = c.String(),
-                        DepartamentoId = c.Int(nullable: false),
-                    })
-                .PrimaryKey(t => t.ProvinciaId)
-                .ForeignKey("dbo.Departamentoes", t => t.DepartamentoId, cascadeDelete: true)
-                .Index(t => t.DepartamentoId);
             
             CreateTable(
                 "dbo.Distritoes",
@@ -122,38 +98,25 @@ namespace _2012142670_PER.Migrations
                 .Index(t => t.ProvinciaId);
             
             CreateTable(
-                "dbo.Ventas",
+                "dbo.Provincias",
                 c => new
                     {
-                        VentaId = c.Int(nullable: false, identity: true),
-                        Precio = c.Int(nullable: false),
-                        TipoPago = c.Byte(nullable: false),
-                        EvaluacionId = c.Int(nullable: false),
-                        CentroAtencion_CentroAtencionId = c.Int(),
-                        Cliente_ClienteId = c.Int(),
-                        LineaTelefonica_LineaTelefonicaId = c.Int(),
+                        ProvinciaId = c.Int(nullable: false, identity: true),
+                        nomProvincia = c.String(),
+                        DepartamentoId = c.Int(nullable: false),
                     })
-                .PrimaryKey(t => t.VentaId)
-                .ForeignKey("dbo.Evaluacions", t => t.EvaluacionId, cascadeDelete: true)
-                .ForeignKey("dbo.CentroAtencions", t => t.CentroAtencion_CentroAtencionId)
-                .ForeignKey("dbo.Clientes", t => t.Cliente_ClienteId)
-                .ForeignKey("dbo.LineaTelefonicas", t => t.LineaTelefonica_LineaTelefonicaId)
-                .Index(t => t.EvaluacionId)
-                .Index(t => t.CentroAtencion_CentroAtencionId)
-                .Index(t => t.Cliente_ClienteId)
-                .Index(t => t.LineaTelefonica_LineaTelefonicaId);
+                .PrimaryKey(t => t.ProvinciaId)
+                .ForeignKey("dbo.Departamentoes", t => t.DepartamentoId, cascadeDelete: true)
+                .Index(t => t.DepartamentoId);
             
             CreateTable(
-                "dbo.Contratoes",
+                "dbo.Departamentoes",
                 c => new
                     {
-                        ContratoId = c.Int(nullable: false, identity: true),
-                        FechaContrato = c.DateTime(nullable: false),
-                        VentaId = c.Int(nullable: false),
+                        DepartamentoId = c.Int(nullable: false, identity: true),
+                        departamento = c.String(),
                     })
-                .PrimaryKey(t => t.ContratoId)
-                .ForeignKey("dbo.Ventas", t => t.VentaId, cascadeDelete: true)
-                .Index(t => t.VentaId);
+                .PrimaryKey(t => t.DepartamentoId);
             
             CreateTable(
                 "dbo.Clientes",
@@ -208,6 +171,31 @@ namespace _2012142670_PER.Migrations
                 .PrimaryKey(t => t.TrabajadorId);
             
             CreateTable(
+                "dbo.Ventas",
+                c => new
+                    {
+                        VentaId = c.Int(nullable: false, identity: true),
+                        Precio = c.Int(nullable: false),
+                        TipoPago = c.Byte(nullable: false),
+                        EvaluacionId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.VentaId)
+                .ForeignKey("dbo.Evaluacions", t => t.EvaluacionId, cascadeDelete: true)
+                .Index(t => t.EvaluacionId);
+            
+            CreateTable(
+                "dbo.Contratoes",
+                c => new
+                    {
+                        ContratoId = c.Int(nullable: false, identity: true),
+                        FechaContrato = c.DateTime(nullable: false),
+                        VentaId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.ContratoId)
+                .ForeignKey("dbo.Ventas", t => t.VentaId, cascadeDelete: true)
+                .Index(t => t.VentaId);
+            
+            CreateTable(
                 "dbo.Direccions",
                 c => new
                     {
@@ -225,36 +213,28 @@ namespace _2012142670_PER.Migrations
         {
             DropForeignKey("dbo.Ubigeos", "Direccion_DireccionId", "dbo.Direccions");
             DropForeignKey("dbo.Direccions", "CentroAtencion_CentroAtencionId", "dbo.CentroAtencions");
+            DropForeignKey("dbo.Ventas", "EvaluacionId", "dbo.Evaluacions");
+            DropForeignKey("dbo.Contratoes", "VentaId", "dbo.Ventas");
             DropForeignKey("dbo.Evaluacions", "TrabajadorId", "dbo.Trabajadors");
             DropForeignKey("dbo.Evaluacions", "PlanId", "dbo.Plans");
             DropForeignKey("dbo.Evaluacions", "LineaTelefonicaId", "dbo.LineaTelefonicas");
-            DropForeignKey("dbo.Ventas", "LineaTelefonica_LineaTelefonicaId", "dbo.LineaTelefonicas");
             DropForeignKey("dbo.AdministradorLineas", "LineasTelefonica_LineaTelefonicaId", "dbo.LineaTelefonicas");
             DropForeignKey("dbo.Evaluacions", "EquipoCelularId", "dbo.EquipoCelulars");
             DropForeignKey("dbo.Evaluacions", "ClienteId", "dbo.Clientes");
-            DropForeignKey("dbo.Ventas", "Cliente_ClienteId", "dbo.Clientes");
             DropForeignKey("dbo.Evaluacions", "CentroAtencionId", "dbo.CentroAtencions");
-            DropForeignKey("dbo.Ventas", "CentroAtencion_CentroAtencionId", "dbo.CentroAtencions");
-            DropForeignKey("dbo.Ventas", "EvaluacionId", "dbo.Evaluacions");
-            DropForeignKey("dbo.Contratoes", "VentaId", "dbo.Ventas");
             DropForeignKey("dbo.CentroAtencions", "UbigeoId", "dbo.Ubigeos");
-            DropForeignKey("dbo.Ubigeos", "DepartamentoId", "dbo.Departamentoes");
-            DropForeignKey("dbo.Provincias", "DepartamentoId", "dbo.Departamentoes");
+            DropForeignKey("dbo.Ubigeos", "DistritoId", "dbo.Distritoes");
             DropForeignKey("dbo.Distritoes", "ProvinciaId", "dbo.Provincias");
-            DropForeignKey("dbo.CentroAtencions", "CentroAtencion_CentroAtencionId", "dbo.CentroAtencions");
+            DropForeignKey("dbo.Provincias", "DepartamentoId", "dbo.Departamentoes");
             DropForeignKey("dbo.AdministradorEquipoes", "EquipoCelular_EquipoCelularId", "dbo.EquipoCelulars");
             DropIndex("dbo.Direccions", new[] { "CentroAtencion_CentroAtencionId" });
-            DropIndex("dbo.AdministradorLineas", new[] { "LineasTelefonica_LineaTelefonicaId" });
             DropIndex("dbo.Contratoes", new[] { "VentaId" });
-            DropIndex("dbo.Ventas", new[] { "LineaTelefonica_LineaTelefonicaId" });
-            DropIndex("dbo.Ventas", new[] { "Cliente_ClienteId" });
-            DropIndex("dbo.Ventas", new[] { "CentroAtencion_CentroAtencionId" });
             DropIndex("dbo.Ventas", new[] { "EvaluacionId" });
-            DropIndex("dbo.Distritoes", new[] { "ProvinciaId" });
+            DropIndex("dbo.AdministradorLineas", new[] { "LineasTelefonica_LineaTelefonicaId" });
             DropIndex("dbo.Provincias", new[] { "DepartamentoId" });
+            DropIndex("dbo.Distritoes", new[] { "ProvinciaId" });
             DropIndex("dbo.Ubigeos", new[] { "Direccion_DireccionId" });
-            DropIndex("dbo.Ubigeos", new[] { "DepartamentoId" });
-            DropIndex("dbo.CentroAtencions", new[] { "CentroAtencion_CentroAtencionId" });
+            DropIndex("dbo.Ubigeos", new[] { "DistritoId" });
             DropIndex("dbo.CentroAtencions", new[] { "UbigeoId" });
             DropIndex("dbo.Evaluacions", new[] { "EquipoCelularId" });
             DropIndex("dbo.Evaluacions", new[] { "LineaTelefonicaId" });
@@ -264,16 +244,16 @@ namespace _2012142670_PER.Migrations
             DropIndex("dbo.Evaluacions", new[] { "TrabajadorId" });
             DropIndex("dbo.AdministradorEquipoes", new[] { "EquipoCelular_EquipoCelularId" });
             DropTable("dbo.Direccions");
+            DropTable("dbo.Contratoes");
+            DropTable("dbo.Ventas");
             DropTable("dbo.Trabajadors");
             DropTable("dbo.Plans");
             DropTable("dbo.AdministradorLineas");
             DropTable("dbo.LineaTelefonicas");
             DropTable("dbo.Clientes");
-            DropTable("dbo.Contratoes");
-            DropTable("dbo.Ventas");
-            DropTable("dbo.Distritoes");
-            DropTable("dbo.Provincias");
             DropTable("dbo.Departamentoes");
+            DropTable("dbo.Provincias");
+            DropTable("dbo.Distritoes");
             DropTable("dbo.Ubigeos");
             DropTable("dbo.CentroAtencions");
             DropTable("dbo.Evaluacions");

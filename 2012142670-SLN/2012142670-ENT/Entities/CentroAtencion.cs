@@ -16,15 +16,11 @@ namespace _2012142670_ENT.Entities
 
         public int UbigeoId { get; set; }
         public Ubigeo Ubigeo { get; set; }
-
-        public ICollection<Venta> Ventas { get; set; }
+        
         public ICollection<Evaluacion> Evaluaciones { get; set; }
-        public ICollection<CentroAtencion> CentroAtenciones { get; set; }
         public CentroAtencion()
         {
-            Ventas = new Collection<Venta>();
             Evaluaciones = new Collection<Evaluacion>();
-            CentroAtenciones = new Collection<CentroAtencion>();
         }
     }
 }

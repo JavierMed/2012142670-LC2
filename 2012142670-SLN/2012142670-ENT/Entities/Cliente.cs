@@ -12,14 +12,12 @@ namespace _2012142670_ENT.Entities
         public int ClienteId { get; set; }
         public string Nombre { get; set; }
         public string DNI { get; set; }
-
-        public ICollection<Venta> Ventas { get; set; }
+        
         public ICollection<Evaluacion> Evaluaciones{ get; set; }
 
         public Cliente()
         {
             Evaluaciones = new Collection<Evaluacion>();
-            Ventas = new Collection<Venta>();
         }
     }
 }

@@ -12,9 +12,9 @@ namespace _2012142670_PER.EntityTypeConfiguration
     {
         public ProvinciaConfiguration()
         {
-            HasMany(d => d.Distritos)
-                .WithRequired(p => p.Provincia)
-                .HasForeignKey(p => p.ProvinciaId);  
+            HasRequired(c => c.Departamento)
+                .WithMany(c => c.Provincias)
+                .HasForeignKey(c => c.DepartamentoId);
         }
     }
 }

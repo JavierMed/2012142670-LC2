@@ -12,15 +12,13 @@ namespace _2012142670_ENT.Entities
         public int LineaTelefonicaId { get; set; }
         public int NumeroLinea { get; set; }
         
-        public TipoLinea TipoLinea { get; set; }        
-        public ICollection<Venta> Ventas { get; set; }
+        public TipoLinea TipoLinea { get; set; }
         public ICollection<Evaluacion> Evaluaciones { get; set; }        
         public ICollection<AdministradorLinea> AdministradorLineas { get; set; }
 
         public LineaTelefonica()
         {
             AdministradorLineas = new Collection<AdministradorLinea>();
-            Ventas = new Collection<Venta>();
             Evaluaciones = new Collection<Evaluacion>();
         }
     }

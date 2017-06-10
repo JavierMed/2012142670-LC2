@@ -40,13 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EntitiesDTO\AdministradorEquipoDTO.cs" />
+    <Compile Include="EntitiesDTO\AdministradorLineaDTO.cs" />
+    <Compile Include="EntitiesDTO\CentroAtencionDTO.cs" />
+    <Compile Include="EntitiesDTO\ClienteDTO.cs" />
+    <Compile Include="EntitiesDTO\ContratoDTO.cs" />
+    <Compile Include="EntitiesDTO\DepartamentoDTO.cs" />
+    <Compile Include="EntitiesDTO\DistritoDTO.cs" />
+    <Compile Include="EntitiesDTO\EquipoCelularDTO.cs" />
+    <Compile Include="EntitiesDTO\EvaluacionDTO.cs" />
+    <Compile Include="EntitiesDTO\LineaTelefonicaDTO.cs" />
+    <Compile Include="EntitiesDTO\PlanDTO.cs" />
+    <Compile Include="EntitiesDTO\ProvinciaDTO.cs" />
+    <Compile Include="EntitiesDTO\TrabajadorDTO.cs" />
+    <Compile Include="EntitiesDTO\UbigeoDTO.cs" />
+    <Compile Include="EntitiesDTO\VentaDTO.cs" />
     <Compile Include="Entities\AdministradorEquipo.cs" />
     <Compile Include="Entities\AdministradorLinea.cs" />
     <Compile Include="Entities\CentroAtencion.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Contrato.cs" />
     <Compile Include="Entities\Departamento.cs" />
-    <Compile Include="Entities\Direccion.cs" />
     <Compile Include="Entities\Distrito.cs" />
     <Compile Include="Entities\EquipoCelular.cs" />
     <Compile Include="Entities\EstadoEvaluacion.cs" />

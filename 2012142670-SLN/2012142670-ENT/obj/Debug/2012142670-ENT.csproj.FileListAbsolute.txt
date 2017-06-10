@@ -8,3 +8,7 @@ C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-ENT\obj\Debug\2012142670-ENT.dll
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-ENT\obj\Debug\2012142670-ENT.pdb
 C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-ENT\obj\Debug\2012142670-ENT.csprojResolveAssemblyReference.cache
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-ENT\bin\Debug\2012142670-ENT.dll
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-ENT\bin\Debug\2012142670-ENT.pdb
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-ENT\obj\Debug\2012142670-ENT.dll
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-ENT\obj\Debug\2012142670-ENT.pdb

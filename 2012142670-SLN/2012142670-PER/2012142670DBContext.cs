@@ -1,4 +1,5 @@
 ﻿using _2012142670_ENT.Entities;
+using _2012142670_ENT.EntitiesDTO;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -19,7 +20,6 @@ namespace _2012142670_PER
         public DbSet<Provincia> Provincia { get; set; }
         public DbSet<Departamento> Departamento { get; set; }
         public DbSet<Ubigeo> Ubigeo { get; set; }
-        public DbSet<Direccion> Direccion { get; set; }
         public DbSet<CentroAtencion> CentroAtencion { get; set; }
         public DbSet<Contrato> Contrato { get; set; }
         public DbSet<Venta> Venta { get; set; }
@@ -27,6 +27,7 @@ namespace _2012142670_PER
         public DbSet<Evaluacion> Evaluacion { get; set; }
         public DbSet<Plan> Plan { get; set; }
         public DbSet<Trabajador> Trabajador { get; set; }
+        
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -42,7 +43,7 @@ namespace _2012142670_PER
             modelBuilder.Configurations.Add(new DistritoConfiguration());
             modelBuilder.Configurations.Add(new ProvinciaConfiguration());
             modelBuilder.Configurations.Add(new DepartamentoConfiguration());
-            //modelBuilder.Configurations.Add(new UbigeoConfiguration());
+            modelBuilder.Configurations.Add(new UbigeoConfiguration());
             modelBuilder.Configurations.Add(new CentroAtencionConfiguration());
             modelBuilder.Configurations.Add(new ContratoConfiguration());
             modelBuilder.Configurations.Add(new VentaConfiguration());
@@ -51,7 +52,7 @@ namespace _2012142670_PER
             modelBuilder.Configurations.Add(new PlanConfiguration());
             modelBuilder.Configurations.Add(new TrabajadorConfiguration());
 
-
+            
 
             base.OnModelCreating(modelBuilder);
         }

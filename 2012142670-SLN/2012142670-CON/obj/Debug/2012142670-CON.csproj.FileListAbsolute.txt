@@ -7,5 +7,6 @@ C:\Users\JavierMedina\Documents\GitHub\2012142670-LC2\2012142670-SLN\2012142670-
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-CON\bin\Debug\2012142670-CON.exe.config
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-CON\bin\Debug\2012142670-CON.exe
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-CON\bin\Debug\2012142670-CON.pdb
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-CON\obj\Debug\2012142670-CON.csprojResolveAssemblyReference.cache
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-CON\obj\Debug\2012142670-CON.exe
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-CON\obj\Debug\2012142670-CON.pdb

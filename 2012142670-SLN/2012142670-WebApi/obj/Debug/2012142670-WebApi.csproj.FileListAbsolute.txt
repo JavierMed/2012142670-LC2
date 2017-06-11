@@ -47,7 +47,9 @@ C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\Ninject.Web.Common.dll
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\Ninject.Web.dll
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Net.Http.Formatting.dll
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Cors.dll
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Helpers.dll
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Http.Cors.dll
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Http.dll
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Http.WebHost.dll
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Mvc.dll
@@ -69,6 +71,7 @@ C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\Ninject.xml
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\Ninject.Web.xml
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\Ninject.Web.Common.xml
+C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Http.Cors.xml
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\Newtonsoft.Json.xml
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Net.Http.Formatting.xml
 C:\Users\JavierMedina\Documents\Programacion I\2012142670-SLN\2012142670-WebApi\bin\System.Web.Helpers.xml
